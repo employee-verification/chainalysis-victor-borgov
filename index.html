@@ -1,1 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Employee Verification</title>
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Unbounded', sans-serif;
+      background-color: #1a3e6b;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      min-height: 100vh;
+      text-align: center;
+      padding: 20px;
+      box-sizing: border-box;
+    }
 
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 700px; /* ширший блок */
+      width: 100%;
+      padding: 30px 40px;
+      background-color: rgba(0,0,0,0.05);
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+      border: 1px solid rgba(255,255,255,0.2);
+    }
+
+    img.logo {
+      max-width: 180px;
+      margin-bottom: 25px; /* відступ від верху */
+    }
+
+    h1 {
+      font-size: 34px;
+      font-weight: 600;
+      margin-bottom: 30px; /* відступ до блока даних */
+    }
+
+    .employee-info {
+      background-color: rgba(255,255,255,0.1);
+      padding: 20px 30px;
+      border-radius: 12px;
+      line-height: 1.7;
+      margin-bottom: 30px; /* відступ до кнопки */
+      font-size: 17px;
+      width: 90%; /* трохи вже ніж загальний контейнер */
+      max-width: 500px;
+      text-align: left;
+    }
+
+    .btn {
+      padding: 14px 35px;
+      font-size: 17px;
+      font-family: 'Unbounded', sans-serif;
+      cursor: pointer;
+      background: linear-gradient(135deg, #ffffff, #e6e6e6);
+      color: #1a3e6b;
+      border: none;
+      border-radius: 8px;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      box-shadow: 0 5px 12px rgba(0,0,0,0.2);
+      width: auto;
+      max-width: 300px;
+      margin-bottom: 40px; /* відступ до водяного знаку */
+    }
+
+    .btn:hover {
+      background: linear-gradient(135deg, #f0f0f0, #d9d9d9);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.3);
+    }
+
+    .watermark {
+      font-size: 13px;
+      color: rgba(255,255,255,0.45);
+      max-width: 650px;
+      line-height: 1.4;
+      text-align: center;
+      margin-top: 20px; /* трохи нижче */
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img class="logo" src="https://companieslogo.com/img/orig/chainalysis.D-32e7bf7f.png?t=1720244494" alt="Chainalysis Logo">
+
+    <h1>Employee Verification</h1>
+
+    <div class="employee-info">
+      <strong>Name:</strong> Victor Borgov<br>
+      <strong>Employee ID:</strong> CL-1063-6931<br>
+      <strong>Position:</strong> Senior Investigator – Analyst<br>
+      <strong>Department:</strong> Intelligence & Operations<br>
+      <strong>Status:</strong> Active<br>
+      <strong>Verified / Working Since:</strong> 03-24-2022
+    </div>
+
+    <button class="btn" onclick="window.location.href='http://chainalysis.com'">
+      Visit Chainalysis Portal
+    </button>
+
+    <div class="watermark">
+      This is the official Chainalysis Employee Verification page. All information provided here is verified and authorized by Chainalysis for internal and authorized external reference.
+    </div>
+  </div>
+</body>
+</html>
